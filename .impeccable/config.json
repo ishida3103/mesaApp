@@ -1,0 +1,32 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-color",
+        "value": "#2481",
+        "createdAt": "2026-10-30T01:55:16.989Z",
+        "reason": "Order number #2481 in demo copy, not a color (assistant triage: false positive)"
+      },
+      {
+        "rule": "buried-raster",
+        "value": "*",
+        "files": [
+          "landing/index.html"
+        ],
+        "createdAt": "2026-10-30T01:55:22.068Z",
+        "reason": "Crossfading phone screens in the sticky How-it-works stage: only the active screenshot is visible by design (assistant triage: intentional state)"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "landing/index.html"
+        ],
+        "createdAt": "2026-10-30T02:02:53.070Z",
+        "reason": "Sections do have gutter padding (clamp 20-72px) plus vertical padding; the heuristic reads the full-bleed marquee band and max-width wrappers as flush (assistant triage: false positive, verified in headless Edge screenshots)"
+      }
+    ]
+  }
+}

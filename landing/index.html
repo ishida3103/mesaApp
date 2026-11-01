@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mesa: order food from restaurants near you</title>
+<meta name="description" content="Mesa is a food-ordering app: browse restaurants by category, build your basket, check out in one screen and follow your order to your door. Portfolio demo.">
+<meta name="theme-color" content="#0D261E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#how">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></g></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+</svg>
+
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Mesa, back to top">
+      <svg viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="10" fill="#19ECA1"/><g fill="none" stroke="#0D261E" stroke-width="2.4"><circle cx="19" cy="19" r="9"/><circle cx="19" cy="19" r="3.6"/></g></svg>
+      mesa
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#features">What's inside</a>
+      <a href="#places">Restaurants</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn-ghost sm" href="login.html">Log in</a>
+      <a class="btn sm" href="signup.html">Sign up</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" data-host>
+  <div class="hero-grid">
+    <div>
+      <h1>Your table, <em>wherever</em> you are.</h1>
+      <p class="lede">Browse restaurants by category, build your basket and follow your order from the kitchen to your door, all in one app.</p>
+      <div class="cta">
+        <a class="btn" href="signup.html">Create account <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn-ghost" href="login.html">Log in</a>
+      </div>
+      <p class="note">Portfolio demo. Restaurants and dishes are fictional.</p>
+    </div>
+
+    <div class="stage" aria-hidden="false">
+      <div class="layer blob l-blob1" data-speed="0.2" style="width:470px;height:470px;left:30px;top:60px"></div>
+      <div class="layer blob l-blob2" data-speed="0.3" style="width:150px;height:150px;right:14px;top:10px;background:var(--tint-300)"></div>
+      <div class="layer phone l-phone" data-speed="0.04" style="width:318px;left:120px;top:14px">
+        <div class="screen"><img src="assets/phone-home.png" width="390" height="844" alt="Mesa app home screen: greeting, search, live order strip, categories and restaurants" fetchpriority="high"></div>
+      </div>
+      <div class="layer round l-poke" data-speed="-0.18" style="--rot:-6deg;width:190px;height:190px;left:-14px;top:372px"><img src="assets/photo-poke.jpg" width="800" height="800" alt="Salmon poke bowl"></div>
+      <div class="layer round l-pizza" data-speed="-0.3" style="--rot:5deg;width:150px;height:150px;right:-6px;top:112px"><img src="assets/photo-pizza.jpg" width="800" height="800" alt="Margherita pizza"></div>
+      <div class="layer round l-matcha" data-speed="-0.12" style="width:118px;height:118px;right:34px;bottom:34px"><img src="assets/photo-matcha.jpg" width="800" height="800" alt="Iced matcha"></div>
+      <div class="layer float-card l-card" data-speed="-0.36" style="left:-96px;top:128px">
+        <span class="tile"><svg aria-hidden="true" style="color:#197153"><use href="#i-clock"/></svg></span>
+        <span><b>Order #2481 · Preparing</b><strong>Arriving in 18 min</strong></span>
+      </div>
+      <div class="layer chip-rate l-rate" data-speed="-0.24" style="right:6px;bottom:196px"><svg width="16" height="16" aria-hidden="true" class="star"><use href="#i-star"/></svg><b>4.8</b> Green Bowl Kitchen</div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY BAND -->
+<section class="band" data-host aria-label="Categories: burgers, pizza, sushi, salads, desserts, drinks">
+  <div class="band-row fill" data-xspeed="0.3" style="margin-left:-6vw" aria-hidden="true">
+    <span>Burgers<i></i></span><span>Pizza<i></i></span><span>Sushi<i></i></span><span>Salads<i></i></span><span>Desserts<i></i></span><span>Drinks<i></i></span>
+  </div>
+  <div class="band-row o" data-xspeed="-0.3" style="margin-left:-30vw" aria-hidden="true">
+    <span>Starters<i></i></span><span>Mains<i></i></span><span>Bowls<i></i></span><span>Sides<i></i></span><span>Sweets<i></i></span><span>Sips<i></i></span>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="wrap">
+    <h2 class="h2">From hungry to fed in four steps.</h2>
+    <p class="sub">The same screens you see on the right are the app itself, designed for the phone in your hand.</p>
+
+    <div class="how-grid" data-host>
+      <div class="steps" id="steps">
+        <div class="rail-fill" id="rail-fill"></div>
+        <article class="step is-on" data-shot="0">
+          <h3>Pick a place, then a dish.</h3>
+          <p>Restaurants are listed near you. Open one and its menu is organized by category, with a photo, a description and a price on every item.</p>
+          <img class="shot" src="assets/phone-menu.png" width="390" height="844" alt="Restaurant menu with categories and dishes" loading="lazy">
+        </article>
+        <article class="step" data-shot="1">
+          <h3>Build your basket.</h3>
+          <p>Add items with one tap, change quantities, leave a note for the kitchen and see the total before you commit.</p>
+          <img class="shot" src="assets/phone-basket.png" width="390" height="844" alt="Basket with items, quantities and notes" loading="lazy">
+        </article>
+        <article class="step" data-shot="2">
+          <h3>Check out on one screen.</h3>
+          <p>Choose the delivery address and time, how you pay and a tip for your courier. Then place the order.</p>
+          <img class="shot" src="assets/phone-checkout.png" width="390" height="844" alt="Checkout with address, delivery time, payment and tip" loading="lazy">
+        </article>
+        <article class="step" data-shot="3">
+          <h3>Follow it to your door.</h3>
+          <p>A live status bar shows your estimated arrival, the courier's name and every update, from confirmed to delivered.</p>
+          <img class="shot" src="assets/phone-tracking.png" width="390" height="844" alt="Order tracking with progress bar and courier details" loading="lazy">
+        </article>
+      </div>
+
+      <div class="pin" aria-hidden="true">
+        <div class="layer blob" data-speed="0.1" style="width:380px;height:380px;left:50%;top:50%;margin:-190px 0 0 -190px;opacity:.8"></div>
+        <div class="layer round" data-speed="-0.1" style="--rot:-5deg;width:150px;height:150px;left:-20px;top:16%"><img src="assets/photo-teriyaki.jpg" width="800" height="800" alt="" loading="lazy"></div>
+        <div class="layer round" data-speed="-0.16" style="--rot:6deg;width:120px;height:120px;right:-10px;bottom:14%"><img src="assets/photo-mango.jpg" width="800" height="800" alt="" loading="lazy"></div>
+        <div class="phone" id="phone">
+          <div class="screen">
+            <img class="is-on" src="assets/phone-menu.png" width="390" height="844" alt="">
+            <img src="assets/phone-basket.png" width="390" height="844" alt="">
+            <img src="assets/phone-checkout.png" width="390" height="844" alt="">
+            <img src="assets/phone-tracking.png" width="390" height="844" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section dark" id="features">
+  <div class="wrap">
+    <h2 class="h2">Everything between hungry and fed.</h2>
+    <p class="sub">Search, categories, custom orders, live tracking and history, with an account that keeps it all together.</p>
+
+    <div class="bento">
+      <article class="tileb t-search">
+        <h3>Search restaurants and dishes</h3>
+        <p>Type a name and get matching restaurants and dishes in one list, with the match highlighted.</p>
+        <img class="shot" src="assets/phone-search.png" width="390" height="844" alt="Search results for the word bowl, showing a restaurant and four dishes" loading="lazy">
+      </article>
+
+      <article class="tileb t-cat">
+        <h3>Menus organized by category</h3>
+        <p>Main courses, starters, drinks and desserts, each one tap away. Every item shows its description and price.</p>
+        <div class="chips" aria-hidden="true"><span class="chip on">Main Courses <b>4</b></span><span class="chip">Starters <b>3</b></span><span class="chip">Drinks <b>2</b></span><span class="chip">Desserts <b>2</b></span></div>
+        <div class="menu-list">
+          <div class="menu-row"><img src="assets/photo-falafel.jpg" width="800" height="800" alt="" loading="lazy"><div><strong>Falafel Power Bowl</strong><span>Crispy falafel, hummus, quinoa and tahini</span></div><b>$11.90</b><span class="add"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></div>
+          <div class="menu-row"><img src="assets/photo-matcha.jpg" width="800" height="800" alt="" loading="lazy"><div><strong>Iced Matcha</strong><span>Ceremonial matcha with oat milk</span></div><b>$4.50</b><span class="add"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></div>
+          <div class="menu-row"><img src="assets/photo-mango.jpg" width="800" height="800" alt="" loading="lazy"><div><strong>Mango Chia Pudding</strong><span>Coconut milk chia, fresh mango, toasted coconut</span></div><b>$5.50</b><span class="add"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></div>
+        </div>
+      </article>
+
+      <article class="tileb t-custom">
+        <h3>Make it yours</h3>
+        <p>Pick a base, add extras and leave a note for the kitchen.</p>
+        <div class="menu-list" aria-hidden="true">
+          <div class="opt sel"><span class="r"></span>Sushi rice<em>Included</em></div>
+          <div class="opt"><span class="r"></span>Quinoa<em>+$1.00</em></div>
+          <div class="opt"><span class="r"></span>Brown rice<em>Included</em></div>
+        </div>
+      </article>
+
+      <article class="tileb t-track">
+        <h3>Know exactly when</h3>
+        <p>Live arrival time, status and your courier's name.</p>
+        <div class="big-eta">18<small>min</small></div>
+        <div class="steps4" aria-hidden="true"><i class="d"></i><i class="d"></i><i></i><i></i></div>
+        <div class="courier"><span class="avatar" aria-hidden="true">MR</span><div><b style="font:600 17px/1.2 var(--display)">Marcus Reed</b><div style="font-size:14px;color:var(--on-dark-2)">Your courier · 4.9 rating</div></div></div>
+      </article>
+
+      <article class="tileb t-hist">
+        <div>
+          <h3>Every order, one tap from again</h3>
+          <p>Your account keeps order history, receipts, addresses and payment methods, and lets you reorder in a tap.</p>
+        </div>
+        <div class="order-list">
+          <div class="order"><img src="assets/photo-pizza.jpg" width="800" height="800" alt="" loading="lazy"><div><strong>Fire &amp; Dough</strong><span>Oct 24 · 2× Margherita Pizza, 1× Tiramisu</span></div><b>$36.50</b><span class="pill-btn">Reorder</span></div>
+          <div class="order"><img src="assets/cover-sushi.jpg" width="1200" height="800" alt="" loading="lazy"><div><strong>Sunrise Sushi</strong><span>Oct 17 · 1× Salmon Nigiri Set, 2× Miso Soup</span></div><b>$24.90</b><span class="pill-btn">Reorder</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RESTAURANTS -->
+<section class="section" id="places">
+  <div class="wrap">
+    <h2 class="h2">Places worth the trip.</h2>
+    <p class="sub">A taste of the kitchens in the demo. Every restaurant here is fictional.</p>
+    <div class="places" data-host>
+      <article class="place">
+        <div class="cover"><img data-speed="0.07" src="assets/cover-green.jpg" width="1200" height="800" alt="Green Bowl Kitchen, a bright counter with fresh bowls and plants" loading="lazy"></div>
+        <div class="body"><h3>Green Bowl Kitchen</h3><div class="meta"><span><span class="star">★</span> <b>4.8</b></span><span>20–30 min</span><span>$1.99 delivery</span></div><p class="tagline">Healthy bowls, built around whole grains and crisp vegetables.</p></div>
+      </article>
+      <article class="place">
+        <div class="cover"><img data-speed="-0.04" src="assets/cover-pizza.jpg" width="1200" height="800" alt="Fire and Dough, a pizzeria with a wood-fired oven" loading="lazy"></div>
+        <div class="body"><h3>Fire &amp; Dough</h3><div class="meta"><span><span class="star">★</span> <b>4.7</b></span><span>25–35 min</span><span>Free delivery</span></div><p class="tagline">Wood-fired pizza, Italian classics and a very good tiramisu.</p></div>
+      </article>
+      <article class="place">
+        <div class="cover"><img data-speed="0.1" src="assets/cover-sushi.jpg" width="1200" height="800" alt="Sunrise Sushi, a minimalist sushi counter" loading="lazy"></div>
+        <div class="body"><h3>Sunrise Sushi</h3><div class="meta"><span><span class="star">★</span> <b>4.9</b></span><span>30–40 min</span><span>$2.49 delivery</span></div><p class="tagline">Nigiri and maki with a calm, minimalist counter.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section dark final" data-host id="join">
+  <div class="layer round" data-speed="-0.14" style="--rot:-6deg;width:min(16vw,210px);aspect-ratio:1;left:2%;top:14%"><img src="assets/photo-burger.jpg" width="800" height="800" alt="" loading="lazy"></div>
+  <div class="layer round" data-speed="-0.26" style="--rot:7deg;width:min(15vw,190px);aspect-ratio:1;right:3%;bottom:12%"><img src="assets/photo-tiramisu.jpg" width="800" height="800" alt="" loading="lazy"></div>
+  <div class="layer round" data-speed="0.12" style="width:min(10vw,120px);aspect-ratio:1;left:19%;bottom:8%"><img src="assets/photo-pizza.jpg" width="800" height="800" alt="" loading="lazy"></div>
+  <div class="layer round" data-speed="0.16" style="width:min(9vw,110px);aspect-ratio:1;right:22%;top:12%"><img src="assets/photo-teriyaki.jpg" width="800" height="800" alt="" loading="lazy"></div>
+  <div class="wrap inner">
+    <h2 class="h2">Your table is ready when you are.</h2>
+    <p class="sub">Create your account to place your first order, or log in to pick up where you left off.</p>
+    <div class="cta">
+      <a class="btn" href="signup.html">Create account <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn-ghost on-dark" href="login.html">Log in</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap row">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="10" fill="#19ECA1"/><g fill="none" stroke="#0D261E" stroke-width="2.4"><circle cx="19" cy="19" r="9"/><circle cx="19" cy="19" r="3.6"/></g></svg>
+      mesa
+    </a>
+    <nav aria-label="Account"><a href="login.html">Log in</a><a href="signup.html">Sign up</a><a href="#top">Back to top</a></nav>
+    <p>Portfolio demo. All restaurants, dishes and people shown are fictional; no orders are placed.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
