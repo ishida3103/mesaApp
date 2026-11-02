@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../imgs/Logo mark.png">
+    <title>Green Bowl Kitchen</title>
+    <link rel="stylesheet" href="../styles/restaurantPage.css"/>
+    <link rel="stylesheet" href="../styles/defaultConfig.css"/>
+    <link rel="stylesheet" href="../styles/navBar.css"/>
+    <link rel="stylesheet" href="../styles/basketBar.css"/>
+    <link rel="stylesheet" href="../styles/main.css"/>
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-header">
+            <div class="nav-header-logo">
+                <img src="../../imgs/Logo.png" alt="" class="logo">
+            </div>
+        </div>
+        <div class="nav-menus">
+            <button class = "btn-nav-menus btn-nav-active" id = "nav-home">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" stroke = "currentColor">
+                    <path d="M1 7.875L9.25 1L17.5 7.875V16.5833C17.5 16.8264 17.4034 17.0596 17.2315 17.2315C17.0596 17.4034 16.8264 17.5 16.5833 17.5H12V12H6.5V17.5H1.91667C1.67355 17.5 1.44039 17.4034 1.26849 17.2315C1.09658 17.0596 1 16.8264 1 16.5833V7.875Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
+                </svg>
+                <p class = "btn-nav-menus-texto">Home</p>
+            </button>
+
+            <button class = "btn-nav-menus btn-nav-inactive" id = "nav-Search">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke = "currentColor">
+                    <path d="M16.4998 10.0833C16.4998 13.6272 13.627 16.5 10.0832 16.5C6.53934 16.5 3.6665 13.6272 3.6665 10.0833C3.6665 6.53951 6.53934 3.66667 10.0832 3.66667C13.627 3.66667 16.4998 6.53951 16.4998 10.0833Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#9FC4B7"/>
+                    <path d="M18.3333 18.3333L15.125 15.125" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#9FC4B7"/>
+                </svg>
+                <p class = "btn-nav-menus-texto">Search</p>
+            </button>
+
+            <button class = "btn-nav-menus btn-nav-inactive" id = "nav-track-order">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke = "currentColor">
+                    <path d="M19.25 11C19.25 15.5563 15.5563 19.25 11 19.25C6.44365 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.44365 2.75 11 2.75C15.5563 2.75 19.25 6.44365 19.25 11Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#9FC4B7"/>
+                    <path d="M11 6.41667V11L13.9333 12.8333" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#9FC4B7"/>
+                </svg>
+                <p class = "btn-nav-menus-texto">Track Order</p>
+            </button>
+
+            <button class = "btn-nav-menus btn-nav-inactive" id = "nav-account">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke = "currentColor">
+                    <path d="M14.6668 7.33332C14.6668 9.35837 13.0252 11 11.0002 11C8.97512 11 7.3335 9.35837 7.3335 7.33332C7.3335 5.30828 8.97512 3.66666 11.0002 3.66666C13.0252 3.66666 14.6668 5.30828 14.6668 7.33332Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#9FC4B7"/>
+                    <path d="M3.6665 19.25C3.6665 15.5833 6.9665 12.8333 10.9998 12.8333C15.0332 12.8333 18.3332 15.5833 18.3332 19.25" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#9FC4B7"/>
+                </svg>
+                <p class = "btn-nav-menus-texto">Account</p>
+            </button>
+            
+        </div>
+        <div class="nav-profile">
+            <div class="nav-profile-card">
+                <div class="nav-profile-card-pic">
+                    <img src = '../../imgs/Avatar.png'/>
+                </div>
+                <div class="nav-profile-card-info">
+                    <p class="profile-name">Alex Rivera</p>
+                    <p class="profile-status">Signed In</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="header">
+            <button class="btn-back-restaurants">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.25 4.5L6.75 9L11.25 13.5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                </svg>
+                Back to restaurants
+            </button>
+        </div>
+        <div class="restaurant-card">
+            <div class="restaurant-card-img">
+                <img src="../../landing/assets/cover-green-1920x1080.jpg"/>
+            </div>
+            <div class="restaurant-card-infos">
+                <div class="restaurant-name-status">
+                    <p class="restaurant-name">Green Bowl Kitchen</p>
+                    <p class="restaurant-status">Open - Until 10:00 PM</p>
+                </div>
+                <div class="restaurant-categories">Health - Bowls - Vegetarian Friendly</div>
+                <div class="restaurant-data">
+                    <div class="restaurant-rating">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 1.875L9.1875 5.375L13 5.9375L10.25 8.625L10.875 12.4375L7.5 10.625L4.125 12.4375L4.75 8.625L2 5.9375L5.8125 5.375L7.5 1.875Z" fill="#E8A317" stroke-linecap="round" stroke-linejoin="round" stroke="#E8A317"/>
+                        </svg>
+                        <p class="rating-number">4.7</p>
+                        <p class="rating-count">(860)</p>
+                    </div>
+                    <div class="restaurant-delivery-time">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.25 7C12.25 9.8995 9.8995 12.25 7 12.25C4.1005 12.25 1.75 9.8995 1.75 7C1.75 4.1005 4.1005 1.75 7 1.75C9.8995 1.75 12.25 4.1005 12.25 7Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
+                            <path d="M7 4.08331V6.99998L8.86667 8.16665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
+                        </svg>
+                        <p class="card-time-text">30 - 40 min</p>
+                    </div>
+                    <div class="restaurant-delivery-price">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 10V3.33333C2.5 3.11232 2.5878 2.90036 2.74408 2.74408C2.90036 2.5878 3.11232 2.5 3.33333 2.5H10L17.5 10L10 17.5L2.5 10Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            <path d="M7.6665 6.66666C7.6665 7.21894 7.21879 7.66666 6.6665 7.66666C6.11422 7.66666 5.6665 7.21894 5.6665 6.66666C5.6665 6.11437 6.11422 5.66666 6.6665 5.66666C7.21879 5.66666 7.6665 6.11437 7.6665 6.66666Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                        </svg>
+                        <p class="card-price-text">$1.99 delivery</p>
+                    </div>
+                    <div class="card-restaurant-min-order">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.75 6H14.25L13.35 14.4C13.3223 14.5489 13.2501 14.6859 13.143 14.793C13.0359 14.9001 12.8989 14.9723 12.75 15H5.4C5.22454 15.0035 5.0534 14.9454 4.91636 14.8358C4.77932 14.7262 4.68506 14.572 4.65 14.4L3.75 6Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            <path d="M6.75 6V4.5C6.75 3.90326 6.98705 3.33097 7.40901 2.90901C7.83097 2.48705 8.40326 2.25 9 2.25C9.59674 2.25 10.169 2.48705 10.591 2.90901C11.0129 3.33097 11.25 3.90326 11.25 4.5V6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                        </svg>
+                        <p class="card-order-text">Min. order $10</p>
+                    </div>
+                    <div class="card-restaurant-distance">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.99984 17.5C9.99984 17.5 15.8332 12.5 15.8332 8.33333C15.8332 6.78624 15.2186 5.30251 14.1246 4.20854C13.0307 3.11458 11.5469 2.5 9.99984 2.5C8.45274 2.5 6.96901 3.11458 5.87505 4.20854C4.78109 5.30251 4.1665 6.78624 4.1665 8.33333C4.1665 12.5 9.99984 17.5 9.99984 17.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            <path d="M12.0832 8.33333C12.0832 9.48393 11.1504 10.4167 9.99984 10.4167C8.84924 10.4167 7.9165 9.48393 7.9165 8.33333C7.9165 7.18274 8.84924 6.25 9.99984 6.25C11.1504 6.25 12.0832 7.18274 12.0832 8.33333Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                        </svg>
+                        <p class="restaurant-distance-text">1.4 km away</p>
+                    </div>
+
+                </div>
+                <div class="restaurant-description">Fresh, seasonal bowls built around whole grains, crisp vegetables and house-made dressings.</div>
+            </div>
+        </div>
+
+        <div class="categories-search">
+            <div class="categories-menus">
+                <div class="category category-active" id = "main-courses">
+                    <p class="category-name">Main Courses</p>
+                    <p class="category-qty">4</p>
+                </div>
+                <div class="category category-inactive" id = "starters">
+                    <p class="category-name">Starters</p>
+                    <p class="category-qty">3</p>
+                </div>
+                <div class="category category-inactive" id = "drinks">
+                    <p class="category-name">Drinks</p>
+                    <p class="category-qty">2</p>
+                </div>
+                <div class="category category-inactive" id = "desserts">
+                    <p class="category-name">Desserts</p>
+                    <p class="category-qty">2</p>
+                </div>
+            </div>
+            <div class="search-bar">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke = "currentColor">
+                    <path d="M16.4998 10.0833C16.4998 13.6272 13.627 16.5 10.0832 16.5C6.53934 16.5 3.6665 13.6272 3.6665 10.0833C3.6665 6.53951 6.53934 3.66667 10.0832 3.66667C13.627 3.66667 16.4998 6.53951 16.4998 10.0833Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#46605A"/>
+                    <path d="M18.3333 18.3333L15.125 15.125" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#46605A"/>
+                </svg>
+                <input type="text" class="input-search-bar" placeholder="Search in this menu">
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="category-div" id = "products-main-courses">
+                <div class="products-header">
+                    <p class="products-title">Main Courses</p>
+                    <p class="products-counter">4 items</p>
+                </div>
+                <div class="products-cards">
+                    <div class="product-card">
+                        <div class="product-info">
+                            <p class="product-name">Salmon Poke Bowl</p>
+                            <div class="product-labels">
+                                <span class="product-label label-popular">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 1.875L9.1875 5.375L13 5.9375L10.25 8.625L10.875 12.4375L7.5 10.625L4.125 12.4375L4.75 8.625L2 5.9375L5.8125 5.375L7.5 1.875Z" fill="#E8A317" stroke-linecap="round" stroke-linejoin="round" stroke="#E8A317"/>
+                                    </svg>
+                                    Popular
+                                </span>
+                            </div>
+                            <p class="product-description">Marinated salmon, avocado, edamame, cucumber and radish over sushi rice.</p>
+                            <p class="product-price">$13.50</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../../imgs/food/photo-poke-1920x1080.png"/>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-info">
+                            <p class="product-name">Falafel Power Bowl</p>
+                            <div class="product-labels">
+                                <span class="product-label label-popular">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 1.875L9.1875 5.375L13 5.9375L10.25 8.625L10.875 12.4375L7.5 10.625L4.125 12.4375L4.75 8.625L2 5.9375L5.8125 5.375L7.5 1.875Z" fill="#E8A317" stroke-linecap="round" stroke-linejoin="round" stroke="#E8A317"/>
+                                    </svg>
+                                    Popular
+                                </span>
+                                <span class="product-label label-vegan">Vegan</span>
+                            </div>
+                            <p class="product-description">Crispy falafel, hummus, quinoa, roasted chickpeas and tahini dressing.</p>
+                            <p class="product-price">$11.90</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../../imgs/food/photo-falafel-1920x1080.png"/>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-info">
+                            <p class="product-name">Teriyaki Chicken Bowl</p>
+                            <div class="product-labels">
+                            </div>
+                            <p class="product-description">Grilled chicken, teriyaki glaze, steamed broccoli, carrot and brown rice.</p>
+                            <p class="product-price">$12.50</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../../imgs/food/photo-teriyaki.png"/>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-info">
+                            <p class="product-name">Mediterranean Quinoa Bowl</p>
+                            <div class="product-labels">
+                                <span class="product-label label-vegeterian">Vegeterian</span>
+                            </div>
+                            <p class="product-description">Quinoa, feta, olives, cherry tomato and cucumber with lemon herb dressing.</p>
+                            <p class="product-price">$11.50</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="../../imgs/food/Generated Salad.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <aside class="basket">
+        <div class="basket-header">
+            <div class="header-line1">
+                <p class="basket-header-title">Your basket</p>
+                <p class="basket-header-counter">3 items</p>
+            </div>
+            <p class="basket-header-restaurant"><span>from</span> Green Bowl Kitchen</p>
+        </div>
+
+        <div class="basket-address">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.99984 17.5C9.99984 17.5 15.8332 12.5 15.8332 8.33333C15.8332 6.78624 15.2186 5.30251 14.1246 4.20854C13.0307 3.11458 11.5469 2.5 9.99984 2.5C8.45274 2.5 6.96901 3.11458 5.87505 4.20854C4.78109 5.30251 4.1665 6.78624 4.1665 8.33333C4.1665 12.5 9.99984 17.5 9.99984 17.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                <path d="M12.0832 8.33333C12.0832 9.48393 11.1504 10.4167 9.99984 10.4167C8.84924 10.4167 7.9165 9.48393 7.9165 8.33333C7.9165 7.18274 8.84924 6.25 9.99984 6.25C11.1504 6.25 12.0832 7.18274 12.0832 8.33333Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+            </svg>
+            <div class="basket-address-info">
+                <p class="address">24 Maple Street</p>
+                <p class="delivery-time">Delivery in 20-30min</p>
+            </div>
+            <button class="btn-basket-address-edit">
+                Edit
+            </button>
+        </div>
+
+        <ul class="basket-items">
+            <li class="basket-item">
+                <div class="item-pic">
+                    <img src="../../imgs/food/Item photo.png"/>
+                </div>
+                <div class="name-quantity">
+                    <p class="item-name">Salmon Poke Bowl</p>
+                    <div class="quantity-control">
+                        <button class = "btn-quantity-remove">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.9165 7H11.0832" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
+                            </svg>
+                        </button>
+                        <p class = "quantity">1</p>
+                        <button class = "btn-quantity-add">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99984 2.91667V7.00001M6.99984 7.00001V11.0833M6.99984 7.00001H2.9165M6.99984 7.00001H11.0832" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <p class="item-price">$13.50</p>
+            </li>
+            
+            <li class="basket-item">
+                <div class="item-pic">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.75 15H26.25C26.25 17.9837 25.0647 20.8452 22.955 22.955C20.8452 25.0647 17.9837 26.25 15 26.25C12.0163 26.25 9.15483 25.0647 7.04505 22.955C4.93526 20.8452 3.75 17.9837 3.75 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                        <path d="M10 15C10 11.25 11.875 8.75 15 7.5C15 11.25 13.75 13.75 10 15ZM16.25 15C17.5 11.25 20 9.375 23.75 9.375C23.125 13.125 20.625 15 16.25 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                    </svg>
+                </div>
+                <div class="name-quantity">
+                    <p class="item-name">Edamame</p>
+                    <div class="quantity-control">
+                        <button class = "btn-quantity-remove">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.9165 7H11.0832" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
+                            </svg>
+                        </button>
+                        <p class = "quantity">1</p>
+                        <button class = "btn-quantity-add">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99984 2.91667V7.00001M6.99984 7.00001V11.0833M6.99984 7.00001H2.9165M6.99984 7.00001H11.0832" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <p class="item-price">$5.00</p>
+            </li>
+
+            <li class="basket-item">
+                <div class="item-pic">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 10H22.5L21 25.25C20.9416 25.5366 20.7845 25.7936 20.5561 25.9763C20.3277 26.1591 20.0424 26.2559 19.75 26.25H10.25C9.95757 26.2559 9.67233 26.1591 9.44393 25.9763C9.21553 25.7936 9.05844 25.5366 9 25.25L7.5 10Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                        <path d="M6.25 10H23.75" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                        <path d="M16.25 10L18.125 3.75H22.5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                    </svg>
+                </div>
+                <div class="name-quantity">
+                    <p class="item-name">Iced Matcha</p>
+                    <div class="quantity-control">
+                        <button class = "btn-quantity-remove">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.9165 7H11.0832" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
+                            </svg>
+                        </button>
+                        <p class = "quantity">2</p>
+                        <button class = "btn-quantity-add">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99984 2.91667V7.00001M6.99984 7.00001V11.0833M6.99984 7.00001H2.9165M6.99984 7.00001H11.0832" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <p class="item-price">$9.00</p>
+            </li>
+        </ul>
+
+        <div class="basket-promo">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 10V3.33333C2.5 3.11232 2.5878 2.90036 2.74408 2.74408C2.90036 2.5878 3.11232 2.5 3.33333 2.5H10L17.5 10L10 17.5L2.5 10Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                <path d="M7.6665 6.66666C7.6665 7.21894 7.21879 7.66666 6.6665 7.66666C6.11422 7.66666 5.6665 7.21894 5.6665 6.66666C5.6665 6.11437 6.11422 5.66666 6.6665 5.66666C7.21879 5.66666 7.6665 6.11437 7.6665 6.66666Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+            </svg>
+            <input type="text" class="basket-promo-input" placeholder="Add promo code">
+            <button class="btn-basket-promo">
+                Apply
+            </button>
+        </div>
+
+        <div class="basket-suggestions">
+            <p class="basket-suggestions-title">Goes well with</p>
+            <ul class="basket-suggestions-items">
+                <li class="basket-suggestions-item">
+                    <div class="suggestions-item-pic">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21C21 14.3869 20.0518 16.6761 18.364 18.364C16.6761 20.0518 14.3869 21 12 21C9.61305 21 7.32387 20.0518 5.63604 18.364C3.94821 16.6761 3 14.3869 3 12Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            <path d="M8 8C8 6.5 9 6.5 9 5M12 8C12 6.5 13 6.5 13 5M16 8C16 6.5 17 6.5 17 5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                        </svg>
+                    </div>
+                    <div class="suggestion-name-price">
+                        <p class="suggestion-item-name">Miso soup</p>
+                        <p class="suggestion-item-price">$3.50</p>                 
+                    </div>
+                    <button class = "btn-add-suggestion">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 3.75V9M9 9V14.25M9 9H3.75M9 9H14.25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
+                        </svg>
+                    </button>
+                </li>
+
+                <li class="basket-suggestions-item">
+                    <div class="suggestions-item-pic">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 10H22.5L21 25.25C20.9416 25.5366 20.7845 25.7936 20.5561 25.9763C20.3277 26.1591 20.0424 26.2559 19.75 26.25H10.25C9.95757 26.2559 9.67233 26.1591 9.44393 25.9763C9.21553 25.7936 9.05844 25.5366 9 25.25L7.5 10Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            <path d="M6.25 10H23.75" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            <path d="M16.25 10L18.125 3.75H22.5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                        </svg>
+                    </div>
+                    <div class="suggestion-name-price">
+                        <p class="suggestion-item-name">Sparkling Water</p>
+                        <p class="suggestion-item-price">$2.50</p>                 
+                    </div>
+                    <button class = "btn-add-suggestion">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 3.75V9M9 9V14.25M9 9H3.75M9 9H14.25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="basket-check-out">
+            <div class="basket-values">
+                <div class="basket-values-item" id="subtotal">
+                    <p class="basket-values-label">Subtotal</p>
+                    <p class="basket-values-price">$27.50</p>
+                </div>
+                <div class="basket-values-item" id="delivery">
+                    <p class="basket-values-label">Delivery</p>
+                    <p class="basket-values-price">$1.99</p>
+                </div>
+                <div class="basket-values-item" id="serviceFee">
+                    <p class="basket-values-label">Service Fee</p>
+                    <p class="basket-values-price">$1.00</p>
+                </div>
+            </div>
+
+            <div class="basket-total-item">
+                <p class="basket-total-label">Total</p>
+                <p class="basket-total-price">$30.49</p>
+            </div>
+
+            <button class = "btn-checkout">
+                Checkout
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.3335 8H12.6668M8.66683 12L12.6668 8L8.66683 4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
+                </svg>
+            </button>
+
+            <p class="basket-warning">You can review everything before paying</p>
+        </div>
+    </aside>
+
+    <script src = "../scripts/mainMenu.js"></script>
+</body>
+</html>

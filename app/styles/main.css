@@ -1,0 +1,12 @@
+/* MAIN CONTENT */
+.main{
+    width: 100%;
+    max-width: 1304px;
+    height: auto;
+    padding: 32px 48px 40px 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
