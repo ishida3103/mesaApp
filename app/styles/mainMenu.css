@@ -777,3 +777,258 @@ body{
     font-weight: 400;
     color: var(--cor-secundaria-texto);
 }
+
+.basket-address{
+    width: 100%;
+    height: 62px;
+    border-radius: 14px;
+    margin-top: 18px;
+
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    background-color: var(--cor-surface-page);
+    border: none;
+}
+
+.basket-address-info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    margin-left: 12px;
+}
+
+.address{
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-principal-texto);
+}
+
+.delivery-time{
+    font-family: "Figtree", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--cor-secundaria-texto);
+}
+
+.btn-basket-address-edit{
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-accent-texto);
+
+    border: none;
+    background-color: transparent;
+
+    margin-left: auto;
+}
+
+
+/* Items */
+.basket-items{
+    width: 100%;
+    margin-top: 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.basket-item{
+    width: 100%;
+    height: 56px;
+    margin-bottom: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.item-pic{
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--green-100);
+}
+
+.name-quantity{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    margin-left: 12px;
+}
+
+.item-name{
+    width: 100%;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color:var(--cor-principal-texto);
+}
+
+.quantity-control{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.btn-quantity-remove{
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    background-color: var(--cor-bg-card);
+    border:1px solid var(--bord-subtitle);
+}
+
+.quantity{
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color:var(--cor-principal-texto);
+}
+
+.btn-quantity-add{
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    background-color: var(--green-100);
+    border: none;
+}
+
+.item-price{
+    margin-left: auto;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color:var(--cor-principal-texto);
+}
+
+.basket-promo{
+    width: 100%;
+    height: 48px;
+    padding: 0px 14px;
+    
+    display: flex;
+    align-items: center;
+    justify-items: left;
+
+    background-color: transparent;
+    border: 1px solid var(--bord-subtitle);
+    border-radius: 14px;
+}
+
+.basket-promo-input{
+    border: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.btn-basket-promo{
+    border: none;
+    background-color: transparent;
+
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-accent-texto);
+}
+
+.basket-suggestions{
+    margin-top: 18px;
+    width: 100%;
+}
+
+.basket-suggestions-title{
+    width: 100%;
+
+    font-family: "Barlow", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color:var(--cor-principal-texto);
+}
+
+.basket-suggestions-items{
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.basket-suggestions-item{
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.suggestions-item-pic{
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    
+    background-color: var(--green-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suggestion-name-price{
+    margin-left: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.suggestion-item-name{
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color:var(--cor-principal-texto);
+}
+
+.suggestion-item-price{
+    font-family: "Figtree", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--cor-secundaria-texto);
+}
+
+
+.btn-add-suggestion{
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: var(--green-500);
+    border: none;
+}
+
+/* VALUES */
+.basket-values{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.basket-values-item{
+    width: 100%;
+    displ
+}
