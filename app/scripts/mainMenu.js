@@ -1,6 +1,7 @@
 // Declaração de elementos
 const btnHome = document.querySelector('#nav-home')
 const btnsNavMenus = document.querySelectorAll('.btn-nav-menus')
+const btnsCategories = document.querySelectorAll()
 
 // Funções
 function alterarSVG(menu,svgElement){ //newColor
@@ -23,6 +24,10 @@ function alterarMenu(newMenu){
     })
 }
 
+function hoverCategories(element){
+    
+}
+
 // Eventos
 btnsNavMenus.forEach(btn=>{
     btn.addEventListener('click', ()=>{
@@ -35,3 +40,5 @@ btnsNavMenus.forEach(btn=>{
         }
     })
 })
+
+btn

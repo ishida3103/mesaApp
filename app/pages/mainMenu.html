@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="nav">
+    <nav class="nav">
         <div class="nav-header">
             <div class="nav-header-logo">
                 <img src="../../imgs/Logo.png" alt="" class="logo">
@@ -59,9 +59,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="main">
+    <main class="main">
         <div class="header">
             <div class="header-info">
                 <p class="header-info-welcome">
@@ -131,20 +131,20 @@
 
             <div class="main-tracker-phases">
                 <div class="main-tracker-phase">
-                    <span class = "phase-span" id = "phase-span-confirmed"> </span>
+                    <span class = "phase-span phase-active" id = "phase-span-confirmed"> </span>
                     <p class="phase-name" id = "phase-name-confirmed">Confirmed</p>
                 </div>
                 <div class="main-tracker-phase">
-                    <span class = "phase-span" id = "phase-span-preparing"> </span>
+                    <span class = "phase-span phase-active" id = "phase-span-preparing"> </span>
                     <p class="phase-name" id = "phase-name-preparing">Preparing</p>
                 </div>
                 <div class="main-tracker-phase">
-                    <span class = "phase-span" id = "phase-span-onTheWay"> </span>
-                    <p class="phase-name" id = "phase-name=onTheWay">On the way</p>
+                    <span class = "phase-span phase-inactive" id = "phase-span-onTheWay"> </span>
+                    <p class="phase-name" id = "phase-name-onTheWay">On the way</p>
                 </div>
                 <div class="main-tracker-phase">
-                    <span class = "phase-span" id = "phase-span-delivered"> </span>
-                    <p class="phase-name" id = "phase-name=delivered">Delivered</p>
+                    <span class = "phase-span phase-inactive" id = "phase-span-delivered"> </span>
+                    <p class="phase-name" id = "phase-name-delivered">Delivered</p>
                 </div>
             </div>
 
@@ -172,7 +172,7 @@
                 </button>
             </div>
             <div class="main-banner-img">
-                <img src="../../imgs/imgBanner.png"/>
+                <img src="../../landing/assets/table-1920x1080.jpg"/>
             </div>
         </div>
 
@@ -180,137 +180,149 @@
             <div class="main-header">
                 <p class="main-title">Browse by category</p>
                 <button class = "btn-main-see-all">
-                    <p class="btn-see-all-text">See all</p>
+                    <span class="btn-see-all-text">See all</span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 4L10 8L6 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
                     </svg>
                 </button>
             </div>
-            <div class="main-category-categories">
-                <button class="btn-category-card">
-                    <div class="category-icon">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 13.75C5 11.7609 6.05357 9.85322 7.92893 8.4467C9.8043 7.04018 12.3478 6.25 15 6.25C17.6522 6.25 20.1957 7.04018 22.0711 8.4467C23.9464 9.85322 25 11.7609 25 13.75H5Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M3.75 17.5H26.25" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M5 21.25H25C25 22.2446 24.6049 23.1984 23.9017 23.9017C23.1984 24.6049 22.2446 25 21.25 25H8.75C7.75544 25 6.80161 24.6049 6.09835 23.9017C5.39509 23.1984 5 22.2446 5 21.25Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                        </svg>
-                    </div>
-                    <p class="category-name">
-                        Burgers
-                    </p>
-                    <p class="category-count">
-                        18 places
-                    </p>
-                </button>
-                
-                <button class="btn-category-card">
-                    <div class="category-icon">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 26.25L4.375 6.87498C7.60541 5.0099 11.2698 4.02802 15 4.02802C18.7302 4.02802 22.3946 5.0099 25.625 6.87498L15 26.25Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M14.375 11.25C14.375 11.9404 13.8154 12.5 13.125 12.5C12.4346 12.5 11.875 11.9404 11.875 11.25C11.875 10.5596 12.4346 10 13.125 10C13.8154 10 14.375 10.5596 14.375 11.25Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M18.75 13.75C18.75 14.4404 18.1904 15 17.5 15C16.8096 15 16.25 14.4404 16.25 13.75C16.25 13.0596 16.8096 12.5 17.5 12.5C18.1904 12.5 18.75 13.0596 18.75 13.75Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M16.25 18.125C16.25 18.8154 15.6904 19.375 15 19.375C14.3096 19.375 13.75 18.8154 13.75 18.125C13.75 17.4346 14.3096 16.875 15 16.875C15.6904 16.875 16.25 17.4346 16.25 18.125Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                        </svg>
-                    </div>
-                    <p class="category-name">
-                        Pizza
-                    </p>
-                    <p class="category-count">
-                        12 places
-                    </p>
-                </button>
+            <ul class="main-category-categories">
+                <li class = "category-card">
+                    <button class="btn-category-card">
+                        <div class="category-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 13.75C5 11.7609 6.05357 9.85322 7.92893 8.4467C9.8043 7.04018 12.3478 6.25 15 6.25C17.6522 6.25 20.1957 7.04018 22.0711 8.4467C23.9464 9.85322 25 11.7609 25 13.75H5Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M3.75 17.5H26.25" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M5 21.25H25C25 22.2446 24.6049 23.1984 23.9017 23.9017C23.1984 24.6049 22.2446 25 21.25 25H8.75C7.75544 25 6.80161 24.6049 6.09835 23.9017C5.39509 23.1984 5 22.2446 5 21.25Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            </svg>
+                        </div>
+                        <p class="category-name">
+                            Burgers
+                        </p>
+                        <p class="category-count">
+                            18 places
+                        </p>
+                    </button>
+                </li>
+                <li class = "category-card">
+                    <button class="btn-category-card">
+                        <div class="category-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 26.25L4.375 6.87498C7.60541 5.0099 11.2698 4.02802 15 4.02802C18.7302 4.02802 22.3946 5.0099 25.625 6.87498L15 26.25Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M14.375 11.25C14.375 11.9404 13.8154 12.5 13.125 12.5C12.4346 12.5 11.875 11.9404 11.875 11.25C11.875 10.5596 12.4346 10 13.125 10C13.8154 10 14.375 10.5596 14.375 11.25Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M18.75 13.75C18.75 14.4404 18.1904 15 17.5 15C16.8096 15 16.25 14.4404 16.25 13.75C16.25 13.0596 16.8096 12.5 17.5 12.5C18.1904 12.5 18.75 13.0596 18.75 13.75Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M16.25 18.125C16.25 18.8154 15.6904 19.375 15 19.375C14.3096 19.375 13.75 18.8154 13.75 18.125C13.75 17.4346 14.3096 16.875 15 16.875C15.6904 16.875 16.25 17.4346 16.25 18.125Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            </svg>
+                        </div>
+                        <p class="category-name">
+                            Pizza
+                        </p>
+                        <p class="category-count">
+                            12 places
+                        </p>
+                    </button>
+                </li>
 
-                <button class="btn-category-card">
-                    <div class="category-icon">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.125 15H21.875C24.2912 15 26.25 16.9588 26.25 19.375C26.25 21.7912 24.2912 23.75 21.875 23.75H8.125C5.70875 23.75 3.75 21.7912 3.75 19.375C3.75 16.9588 5.70875 15 8.125 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M5.625 15C6.875 9.375 10.625 6.875 15 6.875C19.375 6.875 23.125 9.375 24.375 15" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M11.25 9.375L12.5 15M16.25 7.5L16.875 15" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                        </svg>
-                    </div>
-                    <p class="category-name">
-                        Sushi
-                    </p>
-                    <p class="category-count">
-                        9 places
-                    </p>
-                </button>
+                <li class = "category-card">
+                    <button class="btn-category-card">
+                        <div class="category-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.125 15H21.875C24.2912 15 26.25 16.9588 26.25 19.375C26.25 21.7912 24.2912 23.75 21.875 23.75H8.125C5.70875 23.75 3.75 21.7912 3.75 19.375C3.75 16.9588 5.70875 15 8.125 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M5.625 15C6.875 9.375 10.625 6.875 15 6.875C19.375 6.875 23.125 9.375 24.375 15" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M11.25 9.375L12.5 15M16.25 7.5L16.875 15" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            </svg>
+                        </div>
+                        <p class="category-name">
+                            Sushi
+                        </p>
+                        <p class="category-count">
+                            9 places
+                        </p>
+                    </button>
+                </li>
 
-                <button class="btn-category-card">
-                    <div class="category-icon">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.75 15H26.25C26.25 17.9837 25.0647 20.8452 22.955 22.955C20.8452 25.0647 17.9837 26.25 15 26.25C12.0163 26.25 9.15483 25.0647 7.04505 22.955C4.93526 20.8452 3.75 17.9837 3.75 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M10 15C10 11.25 11.875 8.75 15 7.5C15 11.25 13.75 13.75 10 15ZM16.25 15C17.5 11.25 20 9.375 23.75 9.375C23.125 13.125 20.625 15 16.25 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                        </svg>
-                    </div>
-                    <p class="category-name">
-                        Salad
-                    </p>
-                    <p class="category-count">
-                        14 places
-                    </p>
-                </button>
+                <li class = "category-card">
+                    <button class="btn-category-card">
+                        <div class="category-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 15H26.25C26.25 17.9837 25.0647 20.8452 22.955 22.955C20.8452 25.0647 17.9837 26.25 15 26.25C12.0163 26.25 9.15483 25.0647 7.04505 22.955C4.93526 20.8452 3.75 17.9837 3.75 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M10 15C10 11.25 11.875 8.75 15 7.5C15 11.25 13.75 13.75 10 15ZM16.25 15C17.5 11.25 20 9.375 23.75 9.375C23.125 13.125 20.625 15 16.25 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            </svg>
+                        </div>
+                        <p class="category-name">
+                            Salad
+                        </p>
+                        <p class="category-count">
+                            14 places
+                        </p>
+                    </button>
+                </li>
 
-                <button class="btn-category-card">
-                    <div class="category-icon">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.875 15H23.125L21.375 25H8.625L6.875 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M7.5 15C7.5 13.5082 8.29018 12.0774 9.6967 11.0225C11.1032 9.96763 13.0109 9.375 15 9.375C16.9891 9.375 18.8968 9.96763 20.3033 11.0225C21.7098 12.0774 22.5 13.5082 22.5 15" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M15 9.375V6.875" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                        </svg>
-                    </div>
-                    <p class="category-name">
-                        Desserts
-                    </p>
-                    <p class="category-count">
-                        11 places
-                    </p>
+                <li class = "category-card">
+                    <button class="btn-category-card">
+                        <div class="category-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.875 15H23.125L21.375 25H8.625L6.875 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M7.5 15C7.5 13.5082 8.29018 12.0774 9.6967 11.0225C11.1032 9.96763 13.0109 9.375 15 9.375C16.9891 9.375 18.8968 9.96763 20.3033 11.0225C21.7098 12.0774 22.5 13.5082 22.5 15" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M15 9.375V6.875" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            </svg>
+                        </div>
+                        <p class="category-name">
+                            Desserts
+                        </p>
+                        <p class="category-count">
+                            11 places
+                        </p>
+                    </button>
+                </li>
 
-                <button class="btn-category-card">
-                    <div class="category-icon">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 10H22.5L21 25.25C20.9416 25.5366 20.7845 25.7936 20.5561 25.9763C20.3277 26.1591 20.0424 26.2559 19.75 26.25H10.25C9.95757 26.2559 9.67233 26.1591 9.44393 25.9763C9.21553 25.7936 9.05844 25.5366 9 25.25L7.5 10Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M6.25 10H23.75" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                            <path d="M16.25 10L18.125 3.75H22.5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
-                        </svg>
-                    </div>
-                    <p class="category-name">
-                        Drinks
-                    </p>
-                    <p class="category-count">
-                        20 places
-                    </p>
-                </button>
-            </div>
+                <li class = "category-card">
+                    <button class="btn-category-card">
+                        <div class="category-icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 10H22.5L21 25.25C20.9416 25.5366 20.7845 25.7936 20.5561 25.9763C20.3277 26.1591 20.0424 26.2559 19.75 26.25H10.25C9.95757 26.2559 9.67233 26.1591 9.44393 25.9763C9.21553 25.7936 9.05844 25.5366 9 25.25L7.5 10Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M6.25 10H23.75" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                                <path d="M16.25 10L18.125 3.75H22.5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            </svg>
+                        </div>
+                        <p class="category-name">
+                            Drinks
+                        </p>
+                        <p class="category-count">
+                            20 places
+                        </p>
+                    </button>
+                </li>
+            </ul>
         </div>
         <div class="main-suggestions">
             <div class="main-header">
                 <p class="main-title">Restaurants near you</p>
                 <button class = "btn-main-see-all">
-                    <p class="btn-see-all-text">See all</p>
+                    <span class="btn-see-all-text">See all</span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 4L10 8L6 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
                     </svg>
                 </button>
             </div>
 
-            <div class="main-suggestions-options">
-                <button class="btn-option-card">
+            <ul class="main-suggestions-options">
+                <li class="option-card">
                     <div class="card-img">
-                        <img src = "../../imgs/restaurants/greenBowlKitche.png"/>
+                        <img src = "../../landing/assets/cover-green-1920x1080.jpg"/>
                         <span class = "card-favorite">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 15C9 15 3.75 11.7 3.75 7.50003C3.75689 6.89358 3.94743 6.30347 4.29648 5.8075C4.64554 5.31154 5.13671 4.93301 5.70525 4.72184C6.27378 4.51067 6.89296 4.47678 7.48115 4.62463C8.06933 4.77248 8.59889 5.09512 9 5.55003C9.40111 5.09512 9.93067 4.77248 10.5189 4.62463C11.107 4.47678 11.7262 4.51067 12.2948 4.72184C12.8633 4.93301 13.3545 5.31154 13.7035 5.8075C14.0526 6.30347 14.2431 6.89358 14.25 7.50003C14.25 11.7 9 15 9 15Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
                             </svg>
                         </span>
 
-                        <spane class="card-time">
+                        <span class="card-time">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.25 7C12.25 9.8995 9.8995 12.25 7 12.25C4.1005 12.25 1.75 9.8995 1.75 7C1.75 4.1005 4.1005 1.75 7 1.75C9.8995 1.75 12.25 4.1005 12.25 7Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
                                 <path d="M7 4.08331V6.99998L8.86667 8.16665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
                             </svg>
                             <p class="card-time-text">20 - 30 min</p>
-                        </spane>
+                        </span>
                     </div>
                     <div class="card-infos">
                         <div class="card-title">Green Bowl Kitchen</div>
@@ -328,11 +340,11 @@
                             </div>
                         </div>
                     </div>
-                </button>
+                </li>
                 
-                <button class="btn-option-card">
+                <li class="option-card">
                     <div class="card-img">
-                        <img src = "../../imgs/restaurants/fireEDough.png"/>
+                        <img src = "../../landing/assets/cover-pizza-1920x1080.jpg"/>
                         <span class = "card-favorite">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 15C9 15 3.75 11.7 3.75 7.50003C3.75689 6.89358 3.94743 6.30347 4.29648 5.8075C4.64554 5.31154 5.13671 4.93301 5.70525 4.72184C6.27378 4.51067 6.89296 4.47678 7.48115 4.62463C8.06933 4.77248 8.59889 5.09512 9 5.55003C9.40111 5.09512 9.93067 4.77248 10.5189 4.62463C11.107 4.47678 11.7262 4.51067 12.2948 4.72184C12.8633 4.93301 13.3545 5.31154 13.7035 5.8075C14.0526 6.30347 14.2431 6.89358 14.25 7.50003C14.25 11.7 9 15 9 15Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
@@ -363,24 +375,24 @@
                             </div>
                         </div>
                     </div>
-                </button>
+                </li>
 
-                <button class="btn-option-card">
+                <li class="option-card">
                     <div class="card-img">
-                        <img src = "../../imgs/restaurants/sunriseSushi.png"/>
+                        <img src = "../../landing/assets/cover-sushi-1920x1080.jpg"/>
                         <span class = "card-favorite">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 15C9 15 3.75 11.7 3.75 7.50003C3.75689 6.89358 3.94743 6.30347 4.29648 5.8075C4.64554 5.31154 5.13671 4.93301 5.70525 4.72184C6.27378 4.51067 6.89296 4.47678 7.48115 4.62463C8.06933 4.77248 8.59889 5.09512 9 5.55003C9.40111 5.09512 9.93067 4.77248 10.5189 4.62463C11.107 4.47678 11.7262 4.51067 12.2948 4.72184C12.8633 4.93301 13.3545 5.31154 13.7035 5.8075C14.0526 6.30347 14.2431 6.89358 14.25 7.50003C14.25 11.7 9 15 9 15Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
                             </svg>
                         </span>
 
-                        <spane class="card-time">
+                        <span class="card-time">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.25 7C12.25 9.8995 9.8995 12.25 7 12.25C4.1005 12.25 1.75 9.8995 1.75 7C1.75 4.1005 4.1005 1.75 7 1.75C9.8995 1.75 12.25 4.1005 12.25 7Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
                                 <path d="M7 4.08331V6.99998L8.86667 8.16665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
                             </svg>
                             <p class="card-time-text">30 - 40 min</p>
-                        </spane>
+                        </span>
                     </div>
                     <div class="card-infos">
                         <div class="card-title">Sunrise Sushi</div>
@@ -398,26 +410,25 @@
                             </div>
                         </div>
                     </div>
-                </button>
-            </div>
+                </li>
+            </ul>
 
         </div>
         <div class="main-popular">
             <div class="main-header">
                 <p class="main-title">Popular right now</p>
                 <button class = "btn-main-see-all">
-                    <p class="btn-see-all-text">See all</p>
+                    <span class="btn-see-all-text">See all</span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 4L10 8L6 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
                     </svg>
                 </button>
             </div>
 
-            <div class="main-popular-items">
-               
-                <div class="popular-item">
+            <ul class="main-popular-items">
+                <li class="popular-item">
                     <div class="item-card-img">
-                        <img src="../../imgs/food/photo-burger.png"/>
+                        <img src="../../imgs/food/Generated Burger.png"/>
                     </div>
                     <div class="item-card-infos">
                         <p class="item-card-title">Smash Burger</p>
@@ -431,11 +442,11 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="popular-item">
+                <li class="popular-item">
                     <div class="item-card-img">
-                        <img src="../../imgs/food/photo-pizza.png"/>
+                        <img src="../../imgs/food/Generated Pizza.png"/>
                     </div>
                     <div class="item-card-infos">
                         <p class="item-card-title">Margherita Pizza</p>
@@ -449,11 +460,11 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="popular-item">
+                <li class="popular-item">
                     <div class="item-card-img">
-                        <img src="../../imgs/food/photo-poke.png"/>
+                        <img src="../../imgs/food/Generated Poke.png"/>
                     </div>
                     <div class="item-card-infos">
                         <p class="item-card-title">Salmon Poke Bowl</p>
@@ -467,11 +478,11 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="popular-item">
+                <li class="popular-item">
                     <div class="item-card-img">
-                        <img src="../../imgs/food/photo-tiramisu.png"/>
+                        <img src="../../imgs/food/Generated Tiramisu.png"/>
                     </div>
                     <div class="item-card-infos">
                         <p class="item-card-title">Tiramisu</p>
@@ -485,13 +496,13 @@
                             </button>
                         </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
 
         </div>
-    </div>
+    </main>
 
-    <div class="basket">
+    <aside class="basket">
         <div class="basket-header">
             <div class="header-line1">
                 <p class="basket-header-title">Your basket</p>
@@ -514,8 +525,8 @@
             </button>
         </div>
 
-        <div class="basket-items">
-            <div class="basket-item">
+        <ul class="basket-items">
+            <li class="basket-item">
                 <div class="item-pic">
                     <img src="../../imgs/food/Item photo.png"/>
                 </div>
@@ -536,9 +547,9 @@
                     </div>
                 </div>
                 <p class="item-price">$13.50</p>
-            </div>
+            </li>
             
-            <div class="basket-item">
+            <li class="basket-item">
                 <div class="item-pic">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.75 15H26.25C26.25 17.9837 25.0647 20.8452 22.955 22.955C20.8452 25.0647 17.9837 26.25 15 26.25C12.0163 26.25 9.15483 25.0647 7.04505 22.955C4.93526 20.8452 3.75 17.9837 3.75 15Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
@@ -562,9 +573,9 @@
                     </div>
                 </div>
                 <p class="item-price">$5.00</p>
-            </div>
+            </li>
 
-            <div class="basket-item">
+            <li class="basket-item">
                 <div class="item-pic">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.5 10H22.5L21 25.25C20.9416 25.5366 20.7845 25.7936 20.5561 25.9763C20.3277 26.1591 20.0424 26.2559 19.75 26.25H10.25C9.95757 26.2559 9.67233 26.1591 9.44393 25.9763C9.21553 25.7936 9.05844 25.5366 9 25.25L7.5 10Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
@@ -589,8 +600,8 @@
                     </div>
                 </div>
                 <p class="item-price">$9.00</p>
-            </div>
-        </div>
+            </li>
+        </ul>
 
         <div class="basket-promo">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -605,8 +616,8 @@
 
         <div class="basket-suggestions">
             <p class="basket-suggestions-title">Goes well with</p>
-            <div class="basket-suggestions-items">
-                <div class="basket-suggestions-item">
+            <ul class="basket-suggestions-items">
+                <li class="basket-suggestions-item">
                     <div class="suggestions-item-pic">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 12H21C21 14.3869 20.0518 16.6761 18.364 18.364C16.6761 20.0518 14.3869 21 12 21C9.61305 21 7.32387 20.0518 5.63604 18.364C3.94821 16.6761 3 14.3869 3 12Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
@@ -622,12 +633,14 @@
                             <path d="M9 3.75V9M9 9V14.25M9 9H3.75M9 9H14.25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
                         </svg>
                     </button>
-                </div>
+                </li>
 
-                <div class="basket-suggestions-item">
+                <li class="basket-suggestions-item">
                     <div class="suggestions-item-pic">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.9165 7H11.0832" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 10H22.5L21 25.25C20.9416 25.5366 20.7845 25.7936 20.5561 25.9763C20.3277 26.1591 20.0424 26.2559 19.75 26.25H10.25C9.95757 26.2559 9.67233 26.1591 9.44393 25.9763C9.21553 25.7936 9.05844 25.5366 9 25.25L7.5 10Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            <path d="M6.25 10H23.75" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                            <path d="M16.25 10L18.125 3.75H22.5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
                         </svg>
                     </div>
                     <div class="suggestion-name-price">
@@ -639,8 +652,8 @@
                             <path d="M9 3.75V9M9 9V14.25M9 9H3.75M9 9H14.25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
                         </svg>
                     </button>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
 
         <div class="basket-check-out">
@@ -659,7 +672,7 @@
                 </div>
             </div>
 
-            <div class="basket-total-price">
+            <div class="basket-total-item">
                 <p class="basket-total-label">Total</p>
                 <p class="basket-total-price">$30.49</p>
             </div>
@@ -667,13 +680,13 @@
             <button class = "btn-checkout">
                 Checkout
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.3335 8H12.6668M8.66683 12L12.6668 8L8.66683 4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke="#197153"/>
+                    <path d="M3.3335 8H12.6668M8.66683 12L12.6668 8L8.66683 4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke="#0D261E"/>
                 </svg>
             </button>
 
             <p class="basket-warning">You can review everything before paying</p>
         </div>
-    </div>
+    </aside>
 
     <script src = "../scripts/mainMenu.js"></script>
 </body>

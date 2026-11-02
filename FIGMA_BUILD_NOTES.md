@@ -14,7 +14,7 @@ Purpose: everything needed to add a screen to the food-ordering app without re-d
 
 | Section (page Demandas) | Section id | Frames (id) |
 |---|---|---|
-| Mesa: Home | `220:74` | Home / Desktop `217:66`, Home / Mobile `219:66` |
+| Mesa: Home | `220:74` | Home / Desktop `217:66`, Home / Mobile `219:66`, Home / Desktop 1920 `267:66` (1920 x 1464, placed right of the mobile frame; section widened to 4230) |
 | Mesa: Restaurant menu | `223:66` | Restaurant / Desktop `222:76`, Restaurant / Mobile `224:66` |
 | Mesa: Item detail | `226:66` | Item detail / Desktop (modal) `226:67`, Item detail / Mobile (sheet) `226:561` |
 | Mesa: Checkout | `227:66` | Checkout / Desktop `227:67`, Checkout / Mobile `227:273` |
@@ -60,6 +60,7 @@ Photos are image fills on existing nodes. Pull `imageHash` from them:
 ## 5. Layout recipes (numbers)
 
 - Desktop frame 1440: rail 216 | main fluid, padding 32 (content 816) | right panel 344. Pages without a right panel: Account (two columns, details column 300), Login (brand panel 640 + form area, form 420).
+- Desktop frame 1920 (Home only so far): rail 216 | main fluid, padding 48 (content 1208), section gap 32 | right panel 400. Promo banner 224 tall (headline 44, photo 560), category icon tiles 56, restaurant covers 184 (3 cards, ~387 wide), dishes 6 per row at 185 wide (adds Falafel Power Bowl $11.90 and Teriyaki Chicken Bowl $12.50, photos reused by hash from Restaurant / Desktop). Built by cloning `217:66` and resizing, so other 1440 screens can follow the same recipe. After `resize()` on a HUG root, set `layoutSizingVertical = 'HUG'` again.
 - Phone frame 390: status bar 44, gutters 20, tab bar 80 (or fixed action bar, pt12 pb30), floating basket bar 350 x 60 at `y = height - tabbar - 12 - 60`.
 - Modal 880 wide (photo 320, content 560, footer pinned), centered on a 1440 x 1024 viewport frame with a 60% Deep Forest scrim over a clone of the underlying screen. Sheet 390 x 730 at the bottom of an 844 viewport frame.
 - Cards: radius 16 (list items) or 20 (page sections); padding 24 desktop / 18 mobile; 1px `border/subtle` plus the soft shadow (`F(..., {shadow:true, stroke:'border/subtle'})`).
