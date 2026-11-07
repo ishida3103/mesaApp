@@ -2,7 +2,7 @@
 
 | File | What it is | Origin |
 |---|---|---|
-| `photo-*.jpg`, `cover-*.jpg`, `table.jpg` | Food and restaurant photography (burger, pizza, poke, tiramisu, teriyaki, falafel, matcha, mango, three restaurant covers, spread table) | Generated with Figma AI (model `gemini-3.1-flash-image`) for the Mesa Figma file, then exported from Figma node renders (`Mesa — Landing assets (export)` section) and converted to JPEG quality 80. Prompt shape: "Top-down food photography of <dish>, pale mint-white background, soft natural daylight, appetizing, clean, no text, no logo" (dishes) or interior/spread descriptions (covers). Fictional; no real restaurants or people. |
+| `cover-*.jpg`, `table.jpg`, plus dish photos in `../../imgs/food/photo-*.png` | Food and restaurant photography (burger, pizza, poke, tiramisu, teriyaki, falafel, matcha, mango, three restaurant covers, spread table) | Generated with Figma AI (model `gemini-3.1-flash-image`) for the Mesa Figma file, then exported from Figma node renders (`Mesa — Landing assets (export)` section) and converted to JPEG quality 80. Prompt shape: "Top-down food photography of <dish>, pale mint-white background, soft natural daylight, appetizing, clean, no text, no logo" (dishes) or interior/spread descriptions (covers). Fictional; no real restaurants or people. |
 | `phone-*.png` | Screens of the Mesa app (home, menu, basket, checkout, tracking, search) | Rendered from the Figma design frames (`Home / Mobile`, `Restaurant / Mobile`, `Basket / Mobile`, `Checkout / Mobile`, `Tracking / Mobile`, `Search / Mobile`), first 390 x 844 viewport of each. Exported at 1x. |
 
 Notes

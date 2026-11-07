@@ -29,7 +29,7 @@ Purpose: everything needed to add a screen to the food-ordering app without re-d
 
 ## Web build of the landing (HTML/CSS/JS, no build step)
 
-Folder `landing/`: `index.html` (landing), `login.html`, `signup.html`, `styles.css` (tokens + landing + auth), `main.js` (parallax, sticky-phone steps, nav state), `auth.js` (password toggle, live rules, demo-only submit), `assets/` (JPEG photos, PNG phone screens, `ASSETS.md` with provenance). Surface brief: `.impeccable/surfaces/landing-index-html.md` (direction contract).
+Folder `landing/`: `index.html` (landing), `login.html`, `signup.html`, `styles.css` (tokens + landing + auth), `main.js` (parallax, sticky-phone steps, nav state), `auth.js` (password toggle, live rules, demo-only submit), `assets/` (JPEG covers, PNG phone screens, `ASSETS.md` with provenance); dish photos come from `../imgs/food/`. Surface brief: `.impeccable/surfaces/landing-index-html.md` (direction contract).
 
 - Parallax: `data-speed` (vertical; positive = farther, negative = nearer) and `data-xspeed` (horizontal) attributes; offset = (host center − viewport center) × speed; host = closest `[data-host]`. Frozen under `prefers-reduced-motion`. Spec card in Figma: `238:1000`.
 - Preview without a browser tool: headless Edge (`msedge --headless=new --screenshot=... --window-size=W,H file:///...`). Scrolling by hash/`scrollTo` gives blank captures; use a temporary copy that translates `<body>` instead. Phone widths below ~500px are not honored by headless Chrome: wrap the page in an `<iframe>` of the target width. Delete the temporary copies afterwards.
